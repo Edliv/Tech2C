@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url(new.jpg);
+            background-size: 1700px;
+            background-position-y: 7%;
+            background-repeat: no-repeat;
+        }
+        .welcome {
+            margin-top: 3%;
+            text-align: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .welcome h1 {
+            margin-top: 5%;
+            font-size: 40px;
+            color: white;
+            margin-bottom: 3%;
+        }
+        .question label {
+            color: white;
+            font-size: 20px;
+        }
+        .question input {
+            margin-bottom: 1%;
+            padding: 15px;
+            border-radius: 15px;
+            width: 200px;
+        }
+        .contactinfo p {
+            width: 70%;
+            color: lightyellow;
+            margin: auto;
+            margin-top: 2%;
+            font-size: 25px;
+        }
+        button {
+            background-color: rgb(11, 196, 226);
+            padding: 12px 4px 12px 4px;
+            width: 170px;
+            border-radius: 35px;
+            font-size: 13px;
+            text-align: center;
+            color: black;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.2s ease-in-out;
+            border: 0;
+            margin-top: 20px;
+            letter-spacing: 1.5px;
+        }
+        button:hover {
+            background-color: rgb(0,178,207);
+            transform: scale(1.3);
+        }
+        .details {
+            text-align: left;
+            margin-top: 2%;
+        }
+        iframe {
+            margin-left: 10%;
+        }
+        @media (min-width: 1600px) {
+            body {
+                background-size: 2000px;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+        <img src="logo.png" alt="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li> | 
+                <li><a href="about.html">About Us</a></li> |
+                <li><a href="category.html">Category</a></li> |
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <img class='searchicon' src="search.png" alt="searchicon">
+    </header>
+    <div class="welcome">
+        <div class="question">
+            <h1>Drop us a line</h1>
+            <form>
+                <label>Your Name</label><br/>
+                <input type="text" placeholder=""><br/>
+                <label>Your Email</label><br/>
+                <input type="text" placeholder=""><br/>
+                <label>Your Age</label><br/>
+                <input type="text" placeholder=""><br/>
+                <label>Your Message</label><br/>
+                <input type="text" placeholder=""><br/>
+                <button type="submit">SEND</button>
+            </form>
+        </div>
+        <div class="contactinfo">
+            <h1>Contact Information</h1>
+            <p>We love to hear from you on our customer service, 
+                merchandisc, website or any topics you want to share with us. 
+                Your comments and suggestions will be appreciated. Please complete the form below.</p>
+                <div class="details">
+                    <p>Phone Number: 012-9366921</p>
+                    <p>Email: online@tech2c.come.my</p>
+                    <p>Working Hours: Everyday 10:00 - 18:30</p>
+                </div>
+        <div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var scale = 'scale(1)';
+        document.body.style.transform = scale;
+    </script>
+  </body>
+</html>
